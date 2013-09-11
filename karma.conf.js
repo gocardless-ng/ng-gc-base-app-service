@@ -13,7 +13,7 @@ module.exports = function(config) {
       'components/bower-angular-mocks/angular-mocks.js',
       'components/bower-lodash-angular/lodash.custom.js',
       'components/bower-redefine/*.js',
-      'components/bower-ng-http-factory/*.js',
+      'components/ng-http-factory/*.js',
       'components/ng-gc-user-api-service/*.js',
 
       // Specs helpers
