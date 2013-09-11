@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngGcAppConfigService', [
-]).factory('AppConfig', [
+]).factory('AppConfigService', [
   '$window',
   function AppConfigService($window) {
 
