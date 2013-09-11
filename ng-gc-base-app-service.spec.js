@@ -76,4 +76,33 @@ describe('BaseAppService', function() {
       $httpBackend.flush();
     });
   });
+
+  describe('HttpProviderConfig', function() {
+    var configSpy, installSpy;
+    beforeEach(function() {
+      installSpy = jasmine.createSpy('install');
+      configSpy = jasmine.createSpy('config').andReturn({
+        install: installSpy
+      });
+      window.Raven = {
+        config: configSpy
+      };
+    });
+    afterEach(function() {
+      delete window.Raven;
+    });
+
+    beforeEach(module('ngGcRavenConfigService'));
+
+    beforeEach(module(function(RavenConfigServiceProvider){
+      RavenConfigServiceProvider.config('/test');
+    }));
+
+    injectDependencies();
+
+    it('configs Raven', function() {
+      expect(configSpy).toHaveBeenCalledOnceWith('/test', jasmine.any(Object));
+      expect(installSpy).toHaveBeenCalledOnce();
+    });
+  });
 });
