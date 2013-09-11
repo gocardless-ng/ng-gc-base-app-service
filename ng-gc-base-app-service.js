@@ -5,5 +5,6 @@ angular.module('ngGcBaseAppService', [
   'ngGcLocationProviderConfig',
   'ngGcRavenInitializer',
   'ngGcLogInitializer',
+  'ngGcGaInitializer',
   'ngGcRavenConfigService'
 ]);
