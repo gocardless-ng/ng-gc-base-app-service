@@ -6,5 +6,6 @@ angular.module('ngGcBaseAppService', [
   'ngGcRavenInitializer',
   'ngGcLogInitializer',
   'ngGcGaInitializer',
-  'ngGcRavenConfigService'
+  'ngGcRavenConfigService',
+  'ngGcExceptionHandlerProviderConfig'
 ]);
