@@ -4,7 +4,8 @@
   "main": "ng-gc-base-app-service.js",
   "dependencies": {
     "bower-angular": "git@github.com:angular/bower-angular.git#v1.2.0-rc.2",
-    "ng-gc-user-api-service": "git@github.com:gocardless-ng/ng-gc-user-api-service.git"
+    "ng-gc-user-api-service": "git@github.com:gocardless-ng/ng-gc-user-api-service.git",
+    "ng-gc-utils": "git@github.com:gocardless-ng/ng-gc-utils.git"
   },
   "devDependencies": {
     "bower-angular-mocks": "git@github.com:angular/bower-angular-mocks.git#v1.2.0-rc.2",
