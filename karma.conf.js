@@ -14,6 +14,7 @@ module.exports = function(config) {
       'components/bower-lodash-angular/lodash.custom.js',
       'components/bower-redefine/*.js',
       'components/ng-http-factory/*.js',
+      'components/ng-gc-utils/**/*.js',
       'components/ng-gc-user-api-service/*.js',
 
       // Specs helpers
